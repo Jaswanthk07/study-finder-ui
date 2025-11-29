@@ -6,7 +6,7 @@
 ![React Three Fiber](https://img.shields.io/badge/R3F-3D-000?style=flat-square)
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=flat-square)](https://study-finder-ui.vercel.app)
 
-A modern landing page for StudyFinder AI - a platform that connects students with study partners. This project showcases interactive UI components, 3D visualizations, and smooth animations built with React and Next.js.
+A modern landing page for StudyFinder - a platform that connects students with study partners. This project showcases interactive UI components, 3D visualizations, and smooth animations built with React and Next.js.
 
 ---
 
@@ -63,7 +63,7 @@ This is a frontend implementation focused on UI design and interactive web front
 1. **Hero** - Main call-to-action with typing animation
 2. **Product Highlights** - Feature showcase cards
 3. **Connections** - University carousel with smooth transitions
-4. **Features** - AI capabilities overview
+4. **Features** - featuring capabilities overview
 5. **3D Globe** - Interactive world map
 6. **Vision** - Mission and values
 7. **Testimonials** - Student reviews
@@ -113,8 +113,8 @@ This is a frontend implementation focused on UI design and interactive web front
 
 ```bash
 # Clone the repository
-git clone https://github.com/jaswanthk07/studyfinder-ai.git
-cd studyfinder-ai
+git clone https://github.com/jaswanthk07/study-finder-ui.git
+cd study-finder-ui
 
 # Install dependencies
 npm install
@@ -139,7 +139,7 @@ npm run lint     # Run ESLint
 ## 📁 Project Structure
 
 ```
-studyfinder-ai/
+study-finder-ui/
 ├── src/
 │   ├── app/
 │   │   ├── fonts/              # Custom font files
@@ -424,7 +424,7 @@ MIT License - Free to use for personal and commercial projects.
 **Jaswanth K**
 
 - GitHub: [@jaswanthk07](https://github.com/jaswanthk07)
-- Project: [github.com/jaswanthk07/studyfinder-ai](https://github.com/jaswanthk07/studyfinder-ai)
+- Project: [github.com/jaswanthk07/study-finder-ui](https://github.com/jaswanthk07/study-finder-ui)
 - Live Demo: [study-finder-ui.vercel.app](https://study-finder-ui.vercel.app)
 
 ---
