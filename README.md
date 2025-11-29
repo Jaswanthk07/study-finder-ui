@@ -419,9 +419,7 @@ MIT License - Free to use for personal and commercial projects.
 
 ---
 
-## 👨‍💻 Author
-
-**Jaswanth K**
+## 👨‍💻 Links
 
 - GitHub: [@jaswanthk07](https://github.com/jaswanthk07)
 - Project: [github.com/jaswanthk07/study-finder-ui](https://github.com/jaswanthk07/study-finder-ui)
