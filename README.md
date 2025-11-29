@@ -1,4 +1,4 @@
-# StudyFinder AI - Landing Page
+# StudyFinder UI - Landing Page
 
 ![Next.js](https://img.shields.io/badge/Next.js-15+-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?style=flat-square&logo=typescript)
