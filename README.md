@@ -27,7 +27,7 @@ A modern landing page for StudyFinder AI - a platform that connects students wit
 
 ## 🎯 Overview
 
-This is a frontend implementation focused on UI/UX design and interactive web experiences. The landing page features custom animations, a 3D globe visualization, and modern design patterns. **Note:** This is a design showcase - no backend functionality or authentication system is included.
+This is a frontend implementation focused on UI design and interactive web frontend experience. The landing page features custom animations, a 3D globe visualization, and modern design patterns. **Note:** This is a design showcase - no backend functionality or authentication system is included.
 
 ### Key Highlights
 
