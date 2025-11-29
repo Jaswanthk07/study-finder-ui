@@ -762,20 +762,23 @@ export function GlobeSection() {
     <section
       id="globe"
       ref={sectionRef}
-      className="relative py-6 lg:py-8 overflow-hidden"
+      className="relative py-6 lg:py-8 overflow-hidden px-4 sm:px-6"
     >
       <div className="mx-auto max-w-7xl px-6">
-        <div ref={titleRef} className="mx-auto max-w-2xl text-center mb-12">
-          <span className="inline-block rounded-full bg-amber-100 dark:bg-amber-900/30 px-4 py-1.5 text-sm font-semibold text-amber-700 dark:text-amber-400">
+        <div
+          ref={titleRef}
+          className="mx-auto max-w-2xl text-center mb-12 px-4"
+        >
+          <span className="inline-block rounded-full bg-amber-100 dark:bg-amber-900/30 px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-semibold text-amber-700 dark:text-amber-400">
             Global Network
           </span>
-          <h2 className="mt-4 text-balance text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
+          <h2 className="mt-4 text-balance text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">
             Join Learners{" "}
             <span className="bg-linear-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">
               Worldwide
             </span>
           </h2>
-          <p className="mt-4 text-pretty text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+          <p className="mt-4 text-pretty text-sm sm:text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-400">
             Connect with study buddies across the globe. Drag to rotate and
             click markers to see who is studying.
           </p>

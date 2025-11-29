@@ -169,8 +169,8 @@ export function Footer() {
       ref={footerRef}
       className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"
     >
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 sm:gap-12 mb-12">
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="mb-4" ref={logoRef}>
@@ -180,7 +180,7 @@ export function Footer() {
             </div>
             <p
               ref={descRef}
-              className="text-slate-600 dark:text-slate-400 mb-6 max-w-sm text-pretty text-sm"
+              className="text-slate-600 dark:text-slate-400 mb-6 max-w-sm text-pretty text-xs sm:text-sm"
             >
               Connecting students with the best study resources, courses, and
               personalized plans to achieve academic excellence.
@@ -206,11 +206,11 @@ export function Footer() {
           {/* Link Sections */}
           <div
             ref={linksRef}
-            className="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-12"
+            className="md:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12"
           >
             {sections.map((section) => (
               <div key={section.title}>
-                <h3 className="font-semibold text-slate-900 dark:text-white mb-4 text-sm uppercase tracking-wide">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-4 text-xs uppercase tracking-wide">
                   {section.title}
                 </h3>
                 <ul className="space-y-3">
@@ -219,7 +219,7 @@ export function Footer() {
                       <a
                         href={link.href}
                         onClick={(e) => handleNavClick(e, link.href)}
-                        className="text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 hover:translate-x-1 transition-all duration-300"
+                        className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 hover:translate-x-1 transition-all duration-300"
                       >
                         {link.label}
                       </a>
@@ -234,7 +234,7 @@ export function Footer() {
         {/* Copyright */}
         <div
           ref={copyrightRef}
-          className="pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-600 dark:text-slate-400"
+          className="pt-6 sm:pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs sm:text-sm text-slate-600 dark:text-slate-400"
         >
           <p>© 2025 StudyFinder. All rights reserved.</p>
         </div>

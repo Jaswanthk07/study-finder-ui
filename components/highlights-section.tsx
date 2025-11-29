@@ -99,7 +99,7 @@ export function HighlightsSection() {
     <section
       id="highlights"
       ref={sectionRef}
-      className="relative py-12 lg:py-16 overflow-hidden"
+      className="relative py-12 lg:py-16 overflow-hidden px-4 sm:px-6"
     >
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/4 top-1/4 h-72 w-72 rounded-full bg-sky-500/5 dark:bg-sky-500/10 blur-3xl" />
@@ -107,17 +107,17 @@ export function HighlightsSection() {
       </div>
 
       <div className="mx-auto max-w-7xl px-6">
-        <div ref={titleRef} className="mx-auto max-w-2xl text-center">
-          <span className="inline-block rounded-full bg-indigo-100 dark:bg-indigo-900/30 px-4 py-1.5 text-sm font-semibold text-indigo-700 dark:text-indigo-400">
+        <div ref={titleRef} className="mx-auto max-w-2xl text-center px-4">
+          <span className="inline-block rounded-full bg-indigo-100 dark:bg-indigo-900/30 px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-semibold text-indigo-700 dark:text-indigo-400">
             How It Works
           </span>
-          <h2 className="mt-4 text-balance text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
+          <h2 className="mt-4 text-balance text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">
             How StudyFinder Guides{" "}
             <span className="bg-linear-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">
               Your Learning
             </span>
           </h2>
-          <p className="mt-4 text-pretty text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+          <p className="mt-4 text-pretty text-sm sm:text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-400">
             Turn your learning goals into a clear, actionable study plan in four
             simple steps.
           </p>
@@ -125,7 +125,7 @@ export function HighlightsSection() {
 
         <div
           ref={stepsRef}
-          className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4"
+          className="mt-16 grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-4"
         >
           {steps.map((step, idx) => {
             const Icon = step.icon;
@@ -172,7 +172,7 @@ export function HighlightsSection() {
                 )}
 
                 <div
-                  className={`group relative h-full rounded-[1.25rem] border-2 border-slate-400 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-800/60 p-8 shadow-none transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm`}
+                  className={`group relative h-full rounded-[1.25rem] border-2 border-slate-400 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-800/60 p-6 sm:p-8 shadow-none transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm`}
                 >
                   <div
                     className={`absolute -top-3 -left-2 rounded-full bg-linear-to-r ${colorClasses.gradient} px-3 py-1 text-xs font-bold text-white shadow-lg`}
@@ -189,7 +189,7 @@ export function HighlightsSection() {
                   <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                     {step.description}
                   </p>
 

@@ -139,14 +139,14 @@ export function HeroSection() {
       <section
         id="hero"
         ref={heroRef}
-        className="relative w-full overflow-hidden pt-12"
+        className="relative w-full overflow-hidden pt-20 sm:pt-24 md:pt-32"
       >
-        <div className="relative mx-auto flex max-w-7xl flex-col-reverse items-center gap-8 px-6 py-8 md:flex-row md:gap-12 md:py-12 lg:py-16">
+        <div className="relative mx-auto flex max-w-7xl flex-col-reverse items-center gap-6 sm:gap-8 px-4 sm:px-6 py-6 sm:py-8 md:flex-row md:gap-12 md:py-12 lg:py-16 xl:py-20">
           {/* Left Column - Text Content */}
           <div className="flex flex-1 flex-col items-center text-center md:items-start md:text-left">
             <h1
               ref={headlineRef}
-              className="text-balance text-5xl font-bold leading-tight tracking-tight text-slate-900 dark:text-white md:text-6xl lg:text-7xl font-[family-name:var(--font-heading)]"
+              className="text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight text-slate-900 dark:text-white font-[family-name:var(--font-heading)]"
             >
               Find the Best Study Resources{" "}
               <span className="bg-linear-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">
@@ -156,14 +156,14 @@ export function HeroSection() {
 
             <div
               ref={typingRef}
-              className="mt-4 h-10 text-xl md:text-2xl font-medium"
+              className="mt-3 sm:mt-4 h-10 text-base sm:text-lg md:text-xl lg:text-2xl font-medium"
             >
               <TypingEffect />
             </div>
 
             <p
               ref={descriptionRef}
-              className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-slate-600 dark:text-slate-400 sm:text-xl"
+              className="mt-4 sm:mt-6 max-w-xl text-pretty text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg leading-relaxed text-slate-600 dark:text-slate-400"
             >
               StudyFinder recommends high-quality study materials, online
               courses, and personalized study plans tailored to your goals.
@@ -172,12 +172,12 @@ export function HeroSection() {
 
             <div
               ref={buttonsRef}
-              className="mt-10 flex flex-col gap-4 sm:flex-row"
+              className="mt-6 sm:mt-8 md:mt-10 flex flex-col gap-3 sm:gap-4 sm:flex-row"
             >
               <Button
                 size="lg"
                 onClick={handleGetStarted}
-                className="group h-12 rounded-full bg-linear-to-r from-sky-500 to-indigo-600 px-8 text-base font-semibold text-white shadow-lg shadow-sky-500/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-sky-500/30 active:scale-95"
+                className="group h-10 sm:h-12 rounded-full bg-linear-to-r from-sky-500 to-indigo-600 px-6 sm:px-8 text-sm sm:text-base font-semibold text-white shadow-lg shadow-sky-500/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-sky-500/30 active:scale-95"
               >
                 <BookOpen className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
                 Get Started Free
@@ -186,7 +186,7 @@ export function HeroSection() {
                 variant="outline"
                 size="lg"
                 onClick={handleBrowseResources}
-                className="h-12 rounded-full border-2 border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 px-8 text-base font-semibold text-slate-700 dark:text-slate-200 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-white dark:hover:bg-slate-800 hover:shadow-lg active:scale-95"
+                className="h-10 sm:h-12 rounded-full border-2 border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 px-6 sm:px-8 text-sm sm:text-base font-semibold text-slate-700 dark:text-slate-200 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-white dark:hover:bg-slate-800 hover:shadow-lg active:scale-95"
               >
                 <Play className="mr-2 h-4 w-4" />
                 Browse Resources
@@ -194,7 +194,7 @@ export function HeroSection() {
             </div>
 
             {/* Trust indicators */}
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-6 md:justify-start">
+            <div className="mt-8 sm:mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:justify-start">
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
@@ -228,9 +228,9 @@ export function HeroSection() {
           {/* Right Column - Visual Element (Dashboard Mockup) */}
           <div
             ref={imageRef}
-            className="flex flex-1 items-center justify-center"
+            className="flex flex-1 items-center justify-center w-full"
           >
-            <div className="relative w-full max-w-lg">
+            <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
               {/* Main dashboard card */}
               <div
                 ref={cardRef}
@@ -328,7 +328,7 @@ export function HeroSection() {
               </div>
 
               {/* Floating notification card */}
-              <div className="absolute -bottom-4 -left-4 rounded-xl border border-slate-200/60 dark:border-slate-700/60 bg-white/90 dark:bg-slate-800/90 p-4 shadow-lg backdrop-blur-sm md:-left-8">
+              <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 md:-left-8 rounded-lg sm:rounded-xl border border-slate-200/60 dark:border-slate-700/60 bg-white/90 dark:bg-slate-800/90 p-2 sm:p-4 shadow-lg backdrop-blur-sm text-xs sm:text-sm">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900/30">
                     <svg
@@ -357,7 +357,7 @@ export function HeroSection() {
               </div>
 
               {/* Floating stats card */}
-              <div className="absolute -right-4 -top-4 rounded-xl border border-slate-200/60 dark:border-slate-700/60 bg-white/90 dark:bg-slate-800/90 p-4 shadow-lg backdrop-blur-sm md:-right-8">
+              <div className="absolute -right-2 sm:-right-4 md:-right-8 -top-2 sm:-top-4 rounded-lg sm:rounded-xl border border-slate-200/60 dark:border-slate-700/60 bg-white/90 dark:bg-slate-800/90 p-2 sm:p-4 shadow-lg backdrop-blur-sm text-xs sm:text-sm">
                 <div className="text-center">
                   <p className="text-2xl font-bold text-slate-900 dark:text-white">
                     12h

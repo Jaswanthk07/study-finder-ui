@@ -89,7 +89,7 @@ export function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
           {/* Logo */}
           <a href="#hero" onClick={(e) => handleNavClick(e, "#hero")}>
             <StudyFinderLogo size="md" />
@@ -240,17 +240,19 @@ export function Navbar() {
               ))}
               <li className="mt-4 space-y-2">
                 <Button
-                  variant="outline"
-                  className="w-full rounded-full bg-transparent"
+                  variant="ghost"
+                  size="sm"
                   onClick={() => {
                     setIsAuthModalOpen(true);
                     setIsOpen(false);
                   }}
+                  className="w-full text-sm rounded-full bg-transparent"
                 >
                   Log In
                 </Button>
                 <Button
-                  className="w-full rounded-full bg-linear-to-r from-sky-500 to-indigo-600 font-semibold text-white"
+                  size="sm"
+                  className="w-full rounded-full bg-linear-to-r from-sky-500 to-indigo-600 font-semibold text-sm text-white"
                   onClick={() => {
                     setIsAuthModalOpen(true);
                     setIsOpen(false);

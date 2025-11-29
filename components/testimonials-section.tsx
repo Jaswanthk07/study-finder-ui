@@ -88,35 +88,38 @@ export function TestimonialsSection() {
     <section
       id="testimonials"
       ref={sectionRef}
-      className="relative py-12 lg:py-16"
+      className="relative py-12 lg:py-16 px-4 sm:px-6"
     >
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
-        <div ref={titleRef} className="mx-auto max-w-2xl text-center">
-          <span className="inline-block rounded-full bg-indigo-100 dark:bg-indigo-900/30 px-4 py-1.5 text-sm font-semibold text-indigo-700 dark:text-indigo-400">
+        <div ref={titleRef} className="mx-auto max-w-2xl text-center px-4">
+          <span className="inline-block rounded-full bg-indigo-100 dark:bg-indigo-900/30 px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-semibold text-indigo-700 dark:text-indigo-400">
             Testimonials
           </span>
-          <h2 className="mt-4 text-balance text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
+          <h2 className="mt-4 text-balance text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">
             Loved by{" "}
             <span className="bg-linear-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">
               students worldwide
             </span>
           </h2>
-          <p className="mt-4 text-pretty text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+          <p className="mt-4 text-pretty text-sm sm:text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-400">
             See what our community has to say about their learning journey with
             StudyFinder.
           </p>
         </div>
 
         {/* Testimonial Cards */}
-        <div ref={cardsRef} className="mt-16 grid gap-8 md:grid-cols-3">
+        <div
+          ref={cardsRef}
+          className="mt-16 grid gap-6 sm:gap-8 md:grid-cols-1 lg:grid-cols-3"
+        >
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
               className="group relative rounded-[1.25rem] border-2 border-slate-400 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-800/60 p-8 shadow-none transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm"
             >
               <Quote className="mb-4 h-8 w-8 text-sky-500/30 dark:text-sky-400/30" />
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
                 {testimonial.feedback}
               </p>
               <div className="mt-6 flex items-center gap-4">
@@ -126,7 +129,7 @@ export function TestimonialsSection() {
                   className="h-12 w-12 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-slate-900 dark:text-white">
+                  <p className="font-semibold text-slate-900 dark:text-white text-sm sm:text-base">
                     {testimonial.name}
                   </p>
                   <p className="text-sm text-slate-500 dark:text-slate-400">

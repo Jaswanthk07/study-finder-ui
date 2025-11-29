@@ -232,20 +232,24 @@ export function FeaturesSection() {
   }, []);
 
   return (
-    <section id="features" ref={sectionRef} className="relative py-12 lg:py-20">
+    <section
+      id="features"
+      ref={sectionRef}
+      className="relative py-12 lg:py-20 px-4 sm:px-6"
+    >
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
-        <div ref={titleRef} className="mx-auto max-w-2xl text-center">
-          <span className="inline-block rounded-full bg-sky-100 dark:bg-sky-900/30 px-4 py-1.5 text-sm font-semibold text-sky-700 dark:text-sky-400">
+        <div ref={titleRef} className="mx-auto max-w-2xl text-center px-4">
+          <span className="inline-block rounded-full bg-sky-100 dark:bg-sky-900/30 px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm font-semibold text-sky-700 dark:text-sky-400">
             Features
           </span>
-          <h2 className="mt-4 text-balance text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
+          <h2 className="mt-4 text-balance text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">
             Everything you need to{" "}
             <span className="bg-linear-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">
               study smarter
             </span>
           </h2>
-          <p className="mt-4 text-pretty text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+          <p className="mt-4 text-pretty text-sm sm:text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-400">
             Powerful tools designed to help you find resources, plan your
             studies, and track your progress.
           </p>
@@ -253,7 +257,7 @@ export function FeaturesSection() {
 
         <div
           ref={cardsRef}
-          className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-12 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3"
         >
           {features.map((feature, idx) => {
             const Icon = feature.icon;
