@@ -27,6 +27,10 @@ module.exports = {
         border: "var(--color-border)",
         card: "var(--color-card)",
       },
+      spacing: {
+        13: "3.25rem",
+        14: "3.5rem",
+      },
       borderRadius: {
         lg: "var(--radius)",
       },

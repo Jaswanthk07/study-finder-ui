@@ -165,7 +165,7 @@ export function Navbar() {
             </Button>
             <Button
               size="sm"
-              className="rounded-full bg-linear-to-r from-sky-500 to-indigo-600 px-6 font-semibold text-white shadow-md shadow-sky-500/25 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sky-500/30 active:scale-95"
+              className="rounded-xl bg-linear-to-r from-sky-500 to-indigo-600 px-7 sm:px-9 h-10 sm:h-11 text-sm sm:text-base font-bold text-white shadow-lg shadow-sky-500/30 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-sky-500/40 active:scale-95 border border-sky-300/30"
               onClick={() => setIsAuthModalOpen(true)}
             >
               Get Started
