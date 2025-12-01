@@ -56,10 +56,10 @@ export function VisionSection() {
         {/* Background gradient */}
         <div className="absolute inset-0 -z-10 bg-linear-to-b from-transparent via-sky-50/50 to-indigo-50/50 dark:via-sky-950/20 dark:to-indigo-950/20" />
 
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-3 sm:px-6">
           <div
             ref={contentRef}
-            className="relative rounded-[1.5rem] border-2 border-slate-400 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-800/60 p-8 md:p-12 lg:p-16 shadow-none"
+            className="relative rounded-xl sm:rounded-2xl md:rounded-3xl border-2 border-slate-400 dark:border-slate-600 bg-slate-50/80 dark:bg-slate-800/60 p-4 sm:p-6 md:p-10 lg:p-16 shadow-none"
           >
             {/* Decorative elements */}
             <div className="absolute -top-6 -right-6 h-24 w-24 rounded-full bg-linear-to-br from-sky-500/20 to-indigo-500/20 blur-2xl" />
@@ -73,7 +73,7 @@ export function VisionSection() {
               </span>
 
               {/* Headline */}
-              <h2 className="mt-6 text-balance text-4xl font-bold tracking-tight text-slate-900 dark:text-white md:text-5xl">
+              <h2 className="mt-3 sm:mt-4 md:mt-6 text-balance text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">
                 Ready to Build Your{" "}
                 <span className="bg-linear-to-r from-sky-500 via-indigo-500 to-fuchsia-500 bg-clip-text text-transparent">
                   Best Study Routine?
@@ -81,7 +81,7 @@ export function VisionSection() {
               </h2>
 
               {/* Description */}
-              <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+              <p className="mx-auto mt-3 sm:mt-4 md:mt-6 max-w-3xl text-pretty text-sm sm:text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-400">
                 StudyFinder isn&apos;t just a project &mdash; it&apos;s the
                 foundation for a future where every student can find trusted
                 learning paths, eliminate wasted time searching for random
@@ -91,7 +91,7 @@ export function VisionSection() {
               </p>
 
               {/* Stats/Benefits */}
-              <div className="mt-10 grid gap-6 sm:grid-cols-3">
+              <div className="mt-6 sm:mt-8 md:mt-10 grid gap-4 sm:gap-6 sm:grid-cols-3">
                 {[
                   {
                     icon: Globe2,
@@ -127,14 +127,16 @@ export function VisionSection() {
               </div>
 
               {/* CTA Button */}
-              <div className="mt-10">
+              <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center px-4 sm:px-6 md:px-0">
                 <Button
                   size="lg"
                   onClick={handleCTA}
-                  className="h-14 rounded-full bg-linear-to-r from-sky-400 to-blue-900 px-10 text-lg font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 active:scale-95"
+                  className="h-10 xs:h-11 sm:h-12 md:h-12 lg:h-14 rounded-full bg-linear-to-r from-sky-400 to-blue-900 px-4 xs:px-5 sm:px-8 md:px-10 text-xs xs:text-sm sm:text-base md:text-lg font-semibold text-white shadow-lg shadow-blue-500/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 active:scale-95 max-w-full sm:max-w-none"
                 >
-                  <Rocket className="mr-2 h-5 w-5" />
-                  Start Planning Your Study Journey
+                  <Rocket className="mr-2 h-4 xs:h-4 sm:h-5 md:h-5 w-4 xs:w-4 sm:w-5 md:w-5 shrink-0" />
+                  <span className="truncate">
+                    Start Planning Your Study Journey
+                  </span>
                 </Button>
               </div>
             </div>

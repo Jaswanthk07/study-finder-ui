@@ -172,24 +172,24 @@ export function HeroSection() {
 
             <div
               ref={buttonsRef}
-              className="mt-6 sm:mt-8 md:mt-10 flex flex-col gap-3 sm:gap-4 sm:flex-row"
+              className="mt-6 sm:mt-8 md:mt-10 w-full max-w-md sm:max-w-none sm:w-auto flex flex-col gap-2 sm:gap-3 md:gap-4 sm:flex-row"
             >
               <Button
                 size="lg"
                 onClick={handleGetStarted}
-                className="group h-10 sm:h-12 rounded-full bg-linear-to-r from-sky-500 to-indigo-600 px-6 sm:px-8 text-sm sm:text-base font-semibold text-white shadow-lg shadow-sky-500/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-sky-500/30 active:scale-95"
+                className="group h-10 xs:h-11 sm:h-12 md:h-12 rounded-full bg-linear-to-r from-sky-500 to-indigo-600 px-4 xs:px-5 sm:px-8 md:px-10 text-xs xs:text-sm sm:text-base md:text-base font-semibold text-white shadow-lg shadow-sky-500/25 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-sky-500/30 active:scale-95 flex-1 sm:flex-none"
               >
-                <BookOpen className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
-                Get Started Free
+                <BookOpen className="mr-2 h-4 xs:h-5 sm:h-5 w-4 xs:w-5 sm:w-5 transition-transform group-hover:scale-110 shrink-0" />
+                <span className="truncate">Get Started Free</span>
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 onClick={handleBrowseResources}
-                className="h-10 sm:h-12 rounded-full border-2 border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 px-6 sm:px-8 text-sm sm:text-base font-semibold text-slate-700 dark:text-slate-200 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-white dark:hover:bg-slate-800 hover:shadow-lg active:scale-95"
+                className="h-10 xs:h-11 sm:h-12 md:h-12 rounded-full border-2 border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 px-4 xs:px-5 sm:px-8 md:px-10 text-xs xs:text-sm sm:text-base md:text-base font-semibold text-slate-700 dark:text-slate-200 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-slate-300 dark:hover:border-slate-600 hover:bg-white dark:hover:bg-slate-800 hover:shadow-lg active:scale-95 flex-1 sm:flex-none"
               >
-                <Play className="mr-2 h-4 w-4" />
-                Browse Resources
+                <Play className="mr-2 h-4 xs:h-4 sm:h-4 w-4 xs:w-4 sm:w-4 shrink-0" />
+                <span className="truncate">Browse Resources</span>
               </Button>
             </div>
 
